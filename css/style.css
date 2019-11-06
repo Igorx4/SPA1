@@ -90,13 +90,13 @@ header {
 	background: url(../img/header.jpg) repeat center top / cover;
 	padding-bottom: 330px;
 }
-.navbar_wrapper{
+.navbar-wrapper{
 	max-width: 1920px;
 	justify-content:space-between;
 	display: flex;
 	margin: auto;
 }
-.navbar_logo {
+.navbar-logo {
 	margin-top: 33px;
 	margin-left: 7vw;
 	float: left;
@@ -109,7 +109,7 @@ header {
 	letter-spacing: 0.07em;
 	line-height: 5%;
 }
-.navbar_menu {
+.navbar-menu {
 	color:#FFF;
 	float: left;
 	width: 650px;
@@ -117,14 +117,30 @@ header {
 	display: flex;
 	padding-top: 50px;
 }
-.navbar_menu a {
+.navbar-menu a {
 	color:#FFF;
+	white-space:pre;
 }
-.navbar_menu a:hover{
+.navbar-menu a:nth-child(1) {
+	width:42px;
+}
+.navbar-menu a:nth-child(2) {
+	width:54px;
+}
+.navbar-menu a:nth-child(3) {
+	width:109px;
+}
+.navbar-menu a:nth-child(4) {
+	width:124px;
+}
+.navbar-menu a:nth-child(5) {
+	width:73px;
+}
+.navbar-menu a:hover{
 	border-bottom: 2px solid #FCA362;
 	font-weight: 600;
 }
-.navbar_phone {
+.navbar-phone {
 	color: #FFF;
 	float: right;
 	font-weight: bold;
@@ -198,7 +214,7 @@ header {
 	padding-top: 328px; 
 	max-width: 1140px;
 	float: left;
-	margin:auto;
+	margin-left:260px;
 	flex-direction: column;
 }
 .pagination {
@@ -247,7 +263,7 @@ h2 {
 	margin-top: 92px;
 }
 .description-item {
-	display: none;
+	/*display: none;*/
 }
 .description-item-icon {
 	background: rgba(248, 194, 178, 0.65);
@@ -277,17 +293,30 @@ h2 {
 	background: url(../img/services.jpg) repeat center top / cover;
 	padding-bottom: 155px;
 }
+.services-wrapper {
+	max-width: 1140px;
+	justify-content:space-between;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
 .services-title{
-	padding-top: 137px;
-	padding-bottom: 82px;
+	padding:137px 0 82px 20px;
 }
 .services-carousel {
 	margin:20px 0 30px 20px;
 }
+.services-items {
+	width: 213px;
+	margin:auto;
+}
 .services-item {
+	margin-top: 10px;
 	position: relative;
 	height: 350px;
-	display: none;
+}
+.services-item p {
+	user-select: none;
 }
 .services-item span {
 	width: 213px;
@@ -393,24 +422,5 @@ h2 {
 	transform: translateX(0);
 	}
 }
-.services-carousel-media {
-	border:5px solid black;
-	margin:10px auto;
-	overflow:hidden;
-}
-.screen-carousel-media {
-	min-width: 150%;
-	background: pink;
-	left: 0;
-	transition: all ease;
-}
-.services-items {
-	display: block;
-	float: left;
-	width: 213px;
-	margin:auto;
-}
-.screen-carousel.active {
-	transform: scale(1.02);
-	cursor: grabbing;
-}
+
+

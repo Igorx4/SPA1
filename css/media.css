@@ -21,17 +21,17 @@
 	.services-item {
 		display: flex;
 	}
-	.navbar_wrapper {
+	.navbar-wrapper {
 		max-width: 1024px;
 		display: block;
 	}
-	.navbar_phone {
+	.navbar-phone {
 		display: none;
 	}
-	.navbar_menu {
+	.navbar-menu {
 		display: none;	
 	}
-	.navbar_logo {
+	.navbar-logo {
 		margin-top: 55px;
 		margin-left: 20px;
 		float: left;
@@ -54,6 +54,7 @@
 		width: 100%;
 		top: 0;
 		left: 0;
+		backdrop-filter: blur(10px);
 	}
 	.navbar-media a {
 		color: #FFF;
@@ -147,8 +148,14 @@
 	.description-item {
 		margin-bottom: 70px;
 	}
+	.services {
+		overflow: hidden;
+	}
+	.services-title{
+		padding-left: 70px;
+	}
 	.services-carousel {
-		margin-left: 0px;
+		margin:10px auto;
 	}
 	.services-item span {
 		left: 15px;
@@ -162,11 +169,26 @@
 		width: 183px;
 		height: 183px;
 		top: 15px;
-		left: 0px;
+		left: 15px;
 	}
 	.services-carousel {
 		width: 100%;
-		display: flex;
+	}
+	.screen-carousel {
+		min-width: 1120px;
+		width: 150%;
+		left: 0;
+		transition: all ease;
+	}
+	.screen-carousel:active {
+		transform: scale(1.02);
+		cursor: grabbing;
+	}
+	.services-items {
+		display: block;
+		float: left;
+		width: 213px;
+		margin:auto;
 	}
 }
 @media screen and (max-width:768px){
@@ -198,6 +220,9 @@
 	.services-text {
 		display: none;
 	}
+	.screen-carousel {
+		min-width: 165%;
+	}
 	.navbar-media {
 		padding-top: 170px;
 	}
@@ -218,8 +243,14 @@
 			font-size: 	40px;
 			line-height: 40px;
 	}
+	.services-title{
+		padding-left: 20px;
+	}
 	.services-carousel {
 		margin-left: 0px;
+	}
+	.screen-carousel {
+		min-width: 210%;
 	}
 }	
 @media screen and (max-width:425px){
@@ -228,6 +259,9 @@
 	}
 	header{
 		height: 630px;
+	}
+	.screen-carousel {
+		min-width: 800px;
 	}
 }
 @media screen and (max-width:340px){
